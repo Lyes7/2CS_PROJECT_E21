@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <base href="./">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Réunions</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Main styles for this application-->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics-->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-118965717-3"></script>
+    <!-- PROJET 2CS-->
+   
+    <!-- PROJET 2CS-->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      // Shared ID
+      gtag('config', 'UA-118965717-3');
+      // Bootstrap ID
+      gtag('config', 'UA-118965717-5');
+    </script>
+    <link href="vendors/@coreui/chartjs/css/coreui-chartjs.css" rel="stylesheet">
+  </head>
+  <body class="c-app">
+    <div class="c-sidebar c-sidebar-dark c-sidebar-fixed c-sidebar-lg-show" id="sidebar">
+      <div class="c-sidebar-brand d-lg-down-none" >
+        <img src="assets/brand/esi.png" alt="esi logo">
+           </div>
+           
+      <ul class="c-sidebar-nav">
+        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="dashboard.html">
+            <svg class="c-sidebar-nav-icon">
+            
+            </svg> Dashboard<span class="badge badge-info">NEW</span></a></li>
+        <li class="c-sidebar-nav-title">Fonctionnalités</li>
+        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="Reunion.html">
+            <svg class="c-sidebar-nav-icon">
+            </svg> Reunion</a></li>
+        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="Testsim.html">
+            <svg class="c-sidebar-nav-icon">
+            </svg> Test de similitude </a></li>
+        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="Décrit.html">
+              <svg class="c-sidebar-nav-icon">
+              </svg> Liste des Décrits </a></li>
+        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="pvs.html">
+                <svg class="c-sidebar-nav-icon">
+                </svg> Liste des PVs </a></li>
+        
+        
+          </ul>
+        </li>
+        
+      </ul>
+      <button class="c-sidebar-minimizer c-class-toggler" type="button" data-target="_parent" data-class="c-sidebar-minimized"></button>
+    </div>
+    <div class="c-wrapper c-fixed-components">
+      <header class="c-header c-header-light c-header-fixed c-header-with-subheader">
+        <button class="c-header-toggler c-class-toggler d-lg-none mfe-auto" type="button" data-target="#sidebar" data-class="c-sidebar-show">
+          <svg class="c-icon c-icon-lg">
+          </svg>
+        </button><a class="c-header-brand d-lg-none" href="#">
+          <svg width="118" height="46" alt="CoreUI Logo">
+            <use xlink:href="assets/brand/coreui.svg#full"></use>
+          </svg></a>
+        <button class="c-header-toggler c-class-toggler mfs-3 d-md-down-none" type="button" data-target="#sidebar" data-class="c-sidebar-lg-show" responsive="true">
+          <svg class="c-icon c-icon-lg">
+          </svg>
+        </button>
+        <ul class="c-header-nav d-md-down-none">
+          <li class="c-header-nav-item px-3"><a class="c-header-nav-link" href="#">Dashboard</a></li>
+          <li class="c-header-nav-item px-3"><a class="c-header-nav-link" href="#">Users</a></li>
+          <li class="c-header-nav-item px-3"><a class="c-header-nav-link" href="#">Settings</a></li>
+        </ul>
+        <ul class="c-header-nav ml-auto mr-4">
+          <li class="c-header-nav-item d-md-down-none mx-2"><a class="c-header-nav-link" href="#">
+              <svg class="c-icon">
+              </svg></a></li>
+          <li class="c-header-nav-item d-md-down-none mx-2"><a class="c-header-nav-link" href="#">
+              <svg class="c-icon">
+              </svg></a></li>
+          <li class="c-header-nav-item d-md-down-none mx-2"><a class="c-header-nav-link" href="#">
+              <svg class="c-icon">
+              </svg></a></li>
+          <li class="c-header-nav-item dropdown"><a class="c-header-nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+              <div class="c-avatar"><img class="c-avatar-img" src="assets/img/avatars/6.jfif" alt="user@email.com"></div>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right pt-0">
+              <div class="dropdown-header bg-light py-2"><strong>Account</strong></div><a class="dropdown-item" href="#">
+                <svg class="c-icon mr-2">
+                </svg> Updates<span class="badge badge-info ml-auto">42</span></a><a class="dropdown-item" href="#">
+                <svg class="c-icon mr-2">
+                </svg> Messages<span class="badge badge-success ml-auto">42</span></a><a class="dropdown-item" href="#">
+                <svg class="c-icon mr-2">
+                </svg> Tasks<span class="badge badge-danger ml-auto">42</span></a><a class="dropdown-item" href="#">
+                <svg class="c-icon mr-2">
+                </svg> Comments<span class="badge badge-warning ml-auto">42</span></a>
+              <div class="dropdown-header bg-light py-2"><strong>Settings</strong></div><a class="dropdown-item" href="#">
+                <svg class="c-icon mr-2">
+                </svg> Profile</a><a class="dropdown-item" href="#">
+                <svg class="c-icon mr-2">
+                </svg> Settings</a><a class="dropdown-item" href="#">
+                <svg class="c-icon mr-2">
+                </svg> Projects<span class="badge badge-primary ml-auto">42</span></a>
+              <div class="dropdown-divider"></div><a class="dropdown-item" href="#">
+                <svg class="c-icon mr-2">
+                </svg> Lock Account</a><a class="dropdown-item" href="#">
+                <svg class="c-icon mr-2">
+                </svg> Logout</a>
+            </div>
+          </li>
+        </ul>
+        <div class="c-subheader px-3">
+          <!-- Breadcrumb-->
+          <ol class="breadcrumb border-0 m-0">
+            <li class="breadcrumb-item">Home</li>
+            <li class="breadcrumb-item"><a href="#">Admin</a></li>
+            <li class="breadcrumb-item active">Réunions</li>
+            <!-- Breadcrumb Menu-->
+          </ol>
+        </div>
+      </header>
+      <div class="c-body">
+        <main class="c-main">
+          <div class="container-fluid">
+            <div class="fade-in">
+              
+               
+              <!-- list ordre du jour-->
+              <div class="row">
+                <div class="col">
+                  <div class="card">
+                    <div class="card-header">
+                      <h4 style="display: inline-block;">Reunion</h4>
+                      <button id="add"  onclick="show()" class="btn btn-pill btn-info active" style="float: right;">Add</button>
+                      <button id="refresh"  class="btn btn-pill btn-info active" style="margin-right: 10px; float: right;">Refresh</button>
+                      <div class="card-body"  id="the_form" tag="0" style="display:none">
+                        <div class="card-header"><strong>Créer une réunion</strong> </div>
+                        <form class="form-horizontal" id="task_form">
+
+                          <div class="form-group row">
+                            <label class="col-md-3 col-form-label" for="date">La date de la réunion</label>
+                            <div class="col-md-9">
+                              <input class="form-control" id="date" type="date" name="date" placeholder="date"><span class="help-block">Please enter a valid date</span>
+                            </div>
+                          </div>
+
+                          <div class="form-group row">
+                            <label class="col-md-3 col-form-label" for="conseil">Choisir le conseil</label>
+                            <div class="col-md-9">
+                              <select class="form-control"  name="conseil" id="conseil">
+                                <option name="CS">CS</option>
+                                <option name="CFD" >CFD</option>
+                                <option name="CL" >CL</option>
+                                <option name="CLS" >CLS</option>
+                              </select>
+                            </div>
+                          </div>
+
+                          <div class="form-group row">
+                            <label class="col-md-3 col-form-label" for="conseil">Choisir l'ordre du jour</label>
+                            <div class="col-md-9">
+                            
+                          <div class="form-check">
+                            <input class="form-check-input" name="o1" type="checkbox" value="o1" id="o1">
+                            <label class="form-check-label" for="o1">
+                                Validation des sujets doctorat
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" name="o2" type="checkbox" value="o2" id="o2">
+                            <label class="form-check-label" for="o2">
+                                validation de l'inscription au doctorat
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" name="o3" type="checkbox" value="o3" id="o3">
+                            <label class="form-check-label" for="o3">
+                                Etablir un plan de recherche
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" name="o4" type="checkbox" value="o4" id="o4">
+                            <label class="form-check-label" for="o4">
+                                affectation des jury
+                            </label>
+                           </div>
+
+                           </div>
+                          </div>
+
+                          <div class="card-footer">
+                            <input class="btn btn-pill btn-info active" type="submit" value="Add">
+                          </div>
+
+                        </form>
+                      </div>
+
+                    </div>
+                    <div class="card-body">
+
+                      <div class="row">
+                        <div class="col-4">
+                          <div class="list-group" id="list-tab" role="tablist">
+                            <!--<a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="tab" href="#list-home" role="tab" aria-controls="list-home" aria-selected="false">Home</a>-->
+                          </div>
+                        </div>
+                        <div class="col-8">
+                          <div class="tab-content" id="nav-tabContent">
+                            <!--<div class="tab-pane fade active show" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                              <h3>Test</h3>
+                              <p>Velit aute mollit ipsum ad dolor consectetur nulla officia culpa adipisicing exercitation fugiat tempor. Voluptate deserunt sit sunt nisi aliqua fugiat proident ea ut. Mollit voluptate reprehenderit occaecat nisi ad non minim tempor sunt voluptate consectetur exercitation id ut nulla. Ea et fugiat aliquip nostrud sunt incididunt consectetur culpa aliquip eiusmod dolor. Anim ad Lorem aliqua in cupidatat nisi enim eu nostrud do aliquip veniam minim.</p>
+                            </div> -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end list order du jour-->
+
+
+              <!-- /.row--><br>
+              <h4 id="r_title">Reunion:</h4>              
+              <!-- /.row--><br>
+              <form class="form-horizontal" id="clot" >
+              <table class="table table-responsive-sm table-hover table-outline mb-0">
+                <thead class="thead-light">
+                  <tr>
+                    <th>ordre de jour</th>
+                    <th>validation</th>
+                  </tr>
+                </thead>
+                <tbody id="tbod">
+             
+                </tbody>
+              </table>
+              <div class="card-footer">
+                <input class="btn btn-pill btn-info active" type="submit" value="Cloturer Réunion">
+              </div>
+            </form>
+
+            </div>
+          </div>
+        </main>
+        
+
+        <footer class="c-footer">
+          <div><a href="https://coreui.io">PROJET 2CS</a> © 2021.</div>
+          <div class="ml-auto">Powered by&nbsp;EQUIPE 21</div>
+        </footer>
+      </div>
+    </div>
+    <script>
+
+
+const baseUrl = "http://localhost:8000/"
+
+
+ const clot = document.getElementById('clot')
+ clot.addEventListener('submit', async function (c) {
+  c.preventDefault() 
+ 
+  const formData = new FormData(clot).entries()
+  const json = Object.fromEntries(formData)
+  l = []
+  if(json.validation_o1){
+    l.push("o1")
+  }
+  if(json.validation_o2){
+    l.push("o2")
+  }
+  if(json.validation_o3){
+    l.push("o3")
+  }
+  if(json.validation_o4){
+    l.push("o4")
+  }
+  console.log(json['motif_o1'])
+
+  const ref = {"o1":"Validation des sujets doctorat",
+  "o2":"validation de l'inscription au doctorat",
+  "o3":"Etablir un plan de recherche",
+  "o4":"affectation des jury"}
+
+  console.log(l)
+
+   //l.forEach(e=>{
+    Promise.all(l.map(e => {
+      const req = {
+      "abv": e,
+      "titre":ref[e]} 
+      console.log(json)  
+      req["motif"] = json["motif_"+e]
+      if(json["validation_"+e]=="Non_Valide"){
+        req["validation"]=false
+      }else{
+        req["validation"]=true
+      }
+      
+      //console.log(req)
+    
+     fetch(baseUrl+'ordre', {
+      method: 'POST',
+    headers: { 
+      'Accept': 'application/json',
+      'Content-Type': 'application/json' },
+      body: JSON.stringify(req)
+    }).then(res => console.log(res.json()))
+    // const result = await response.json();
+    // console.log(result)
+    
+    })).then(data => {
+  // do something with the data
+})
+ 
+    
+
+//   const response = await fetch(baseUrl+'ordre', {
+//     method: 'POST',
+//     headers: { 
+//       'Accept': 'application/json',
+//       'Content-Type': 'application/json' },
+//     body: JSON.stringify(json)
+// });
+// console.log(JSON.stringify(json))
+// const result = await response.json();
+
+// console.log(result) 
+
+}  ) //End Event
+
+/
+
+callIt()
+const add_btn = document.getElementById("add")
+add_btn.addEventListener("onclick", show); 
+const ee = document.getElementById("the_form")
+
+function show(){
+if (ee.style.display == "none") { 
+add_btn.setAttribute("class","btn btn-pill btn-dark active")
+add_btn.innerText = "Hide"
+ee.setAttribute("style","display:block")
+}else{
+add_btn.innerText = "Add"       
+add_btn.setAttribute("class","btn btn-pill btn-info active")
+ee.setAttribute("style","display:none")
+}
+} 
+
+
+const thisForm = document.getElementById('task_form');
+thisForm.addEventListener('submit', async function (e) {
+e.preventDefault();
+const formData = new FormData(thisForm).entries()
+const json = Object.fromEntries(formData)
+console.log(json.o1)
+l = []
+if(json.o1){
+  l.push("o1")
+}
+if(json.o2){
+  l.push("o2")
+}
+if(json.o3){
+  l.push("o3")
+}
+if(json.o4){
+  l.push("o4")
+}
+console.log(l)
+ const response = await fetch(baseUrl+'reunion', {
+    method: 'POST',
+    headers: { 
+      'Accept': 'application/json',
+      'Content-Type': 'application/json' },
+    body: JSON.stringify(json)
+});
+console.log(JSON.stringify(json))
+const result = await response.json();
+
+console.log(result) 
+ee.setAttribute("style","display:none")
+add_btn.innerText = "Add"       
+add_btn.setAttribute("class","btn btn-pill btn-info active")
+
+
+});
+
+
+const refresh = document.getElementById("refresh")
+refresh.addEventListener("click", ()=>{
+  location.reload()
+})
+
+
+function callIt(){
+    
+fetch(baseUrl+'reunion').
+then(res => res.json()).
+then( data => {
+    data = data.pop()
+    console.log(data)
+    a = data.ordres.split(" ")
+    a.pop()
+    console.log(a)
+    const ref = {"o1":"Validation des sujets doctorat",
+"o2":"validation de l'inscription au doctorat",
+"o3":"Etablir un plan de recherche",
+"o4":"affectation des jury"}
+const tbd = document.getElementById('tbod')
+const r_title = document.getElementById('r_title')
+r_title.innerText = "Réunion "+data.date.substring(0, 10);
+    a.forEach(e =>{
+        const tr = document.createElement("tr")
+const td1 = document.createElement("td")
+const pp= document.createElement("p")
+const dv= document.createElement("div")
+pp.innerText= ref[e]
+dv.appendChild(pp)
+const td2 = document.createElement("td")
+const sel = document.createElement("select")
+sel.setAttribute("class","form-control")
+sel.setAttribute("name","validation_"+e)
+sel.setAttribute("id","validation_"+e)
+
+const opt1 = document.createElement("option")
+const opt2 = document.createElement("option")
+opt1.setAttribute("name","valide_"+e)
+opt1.innerText = "Valide"
+opt2.setAttribute("name","non_valide_"+e)
+opt2.innerText = "Non_Valide"
+sel.append(opt1,opt2)
+const inp3 = document.createElement("input")
+inp3.setAttribute("class","form-control")
+inp3.setAttribute("type","text")
+inp3.setAttribute("placeholder","motif")
+inp3.setAttribute("name","motif_"+e)
+
+td1.append(dv)
+td2.append(sel,inp3)
+tr.append(td1,td2)
+tbd.append(tr)
+
+    })
+
+
+} )
+}//end call it
+
+    </script>
+    <!-- CoreUI and necessary plugins-->
+    <script src="vendors/@coreui/coreui/js/coreui.bundle.min.js"></script>
+    <!--[if IE]><!-->
+    <script src="vendors/@coreui/icons/js/svgxuse.min.js"></script>
+    <!--<![endif]-->
+    <!-- Plugins and scripts required by this view-->
+    <script src="vendors/@coreui/chartjs/js/coreui-chartjs.bundle.js"></script>
+    <script src="vendors/@coreui/utils/js/coreui-utils.js"></script>
+    <script src="js/main.js"></script>
+    
+
+  </body>
+</html>
